@@ -1,15 +1,16 @@
 body{
     margin: 0;
     font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 .home{
     background-image: url('/img/main.jpg');
-    background-size: auto 500px;
+    background-size: auto 800px;
     background-repeat: no-repeat;
     background-position: 50% 0%;
     width: auto;
-    height: 500px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +19,52 @@ body{
 .content{
     color: white;
     font-size: 30px;
-    /* text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);  */
+    
     
 }
 
 .name{
-    background-image: linear-gradient(120deg, #e4c675 0%, #8fd3f4 100%);
+    /* background-image: linear-gradient(120deg, #e4c675 0%, #8fd3f4 100%);
     background-repeat: no-repeat;
-    background-size: 100% 30%;
-    background-position: 0 88%; 
+    background-size: 50% 30%;
+    background-position: 0 80%; */
+    margin-top: 100px;
+}
+
+.name, .reason{
+    font-family: 'Do Hyeon';
+    font-size: 40px;
+    text-align: center;
+}
+
+.eng{
+    font-size: 20px;
+    text-shadow: 6px 6px 0px rgb(0 0 0 / 20%); 
+}
+
+.date{
+    font-family: 'Do Hyeon';
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu{
+    display: flex;    
+    background-color: rgb(150, 219, 219);
+    width: 100%;
+    margin: 0 auto;
+}
+
+li{
+    font-family: 'Do Hyeon';
+    list-style: none;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
 }
 
