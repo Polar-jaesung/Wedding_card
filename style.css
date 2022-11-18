@@ -68,3 +68,15 @@ li{
    
 }
 
+
+.member{
+    display: flex;
+    justify-content: space-around;
+}
+.man img{
+    width: 400px;
+}
+
+.lady img{
+    width: 400px;
+}
