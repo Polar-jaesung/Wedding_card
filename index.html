@@ -11,7 +11,7 @@
    <title>Document</title>
    </head>
 <body>
- <section class="home">
+ <section id="home">
     <div class="content">
         <p class="name">변재성 & Tien </p>
         <p class="reason">결혼합니다 :)</p>
@@ -21,13 +21,13 @@
  </section>
  <section class="navbar">
     <ul class="menu">
-        <li>맨위로</li>
-        <li>신랑/신부</li>
-        <li>갤러리</li>
+        <li data-link="#home">맨위로</li>
+        <li data-link="#member">신랑/신부</li>        
+        <li data-link="#gallery">갤러리</li>
     </ul>    
  </section>
 
- <section>
+ <section id="member">
     <div class="member">
         <div class="man">
             <h2>변재성</h2>
@@ -39,9 +39,9 @@
         </div>
     </div>
  </section>
-<section class="invite">
+<section id="invite">
         <h1>초대합니다</h1>
-        <p>오늘까지 만난지 999일</p>
+        <p>결혼식까지 남은 시간 00일 00시 00분 00초</p>
         <p>만난지 000일 되는날 결혼</p>
         <div class="invite_place">
             <div class="place_detail">
@@ -56,10 +56,9 @@
                 <p>갈비탕과 한정식</p>
             </div>
             <img src="/img/food.jpg" alt="음식">
-        </div>
-   
-   
+        </div>   
 </section>
+<section id="gallery"></section>
 
 <script src="main.js"></script>
 </body>
