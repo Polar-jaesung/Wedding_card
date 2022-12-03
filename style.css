@@ -6,41 +6,51 @@ body{
 
 #home{
     background-image: url('/img/main.jpg');
-    background-size: auto 800px;
+    background-size: auto 100%;
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+    min-height: 480px;
+
     background-repeat: no-repeat;
     background-position: 50% 0%;
     width: auto;
-    height: 800px;
+    height: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content{
+
+
+.content{   
     color: white;
     font-size: 30px;
 }
 
+
 .name{
-    margin-top: 100px;
+    top:  1000px;
 }
 
-.name, .reason{
+.name{
     font-family: 'Do Hyeon';
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
 }
 
 .eng{
     font-family: 'Pacifico';
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 6px 6px 0px rgb(0 0 0 / 20%); 
 }
 
-.date{
+.date_place{
     font-family: 'Do Hyeon';
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
+    text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);
+    text-shadow: 10px 10px 10px rgb(104, 100, 100);
 }
 
 .navbar{
