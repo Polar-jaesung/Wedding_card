@@ -1,24 +1,21 @@
 body{
     margin: 0;
     font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Serif KR', serif;
     font-family: 'Pacifico', cursive;
 }
 
 #home{
-    background-image: url('/img/main.jpg');
-    background-size: auto 100%;
+    background-image: url('/img/main.jpg');    
     background-size: cover;
-    background-position: 50%;
+    background-position: cover;
+    background-repeat: no-repeat; 
+    /* width: 100vh;    */
     height: 100vh;
-    min-height: 480px;
-
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    width: auto;
-    height: 950px;
+    min-height: 480px;    
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 
@@ -31,6 +28,7 @@ body{
 
 .name{
     top:  1000px;
+    text-shadow: 10px 10px 0px rgb(0 0 0 / 50%); 
 }
 
 .name{
@@ -49,8 +47,7 @@ body{
     font-family: 'Do Hyeon';
     font-size: 30px;
     text-align: center;
-    text-shadow: 6px 6px 0px rgb(0 0 0 / 20%);
-    text-shadow: 10px 10px 10px rgb(104, 100, 100);
+    text-shadow: 6px 6px 0px rgb(0 0 0 / 20%); 
 }
 
 .navbar{
@@ -59,7 +56,7 @@ body{
 
 .menu{
     display: flex;    
-    background-color: rgb(150, 219, 219);
+    background-color: rgb(189, 245, 245);
     width: 100%;
     height: 50px ;
     margin: 0 auto;
@@ -68,14 +65,16 @@ body{
 li{
     font-family: 'Do Hyeon';
     list-style: none;
-    padding: 10px 20px;
-    line-height: 100%;
-      
+    font-size: 2vh;
+    padding:20px;   
+    line-height: 100%;    
+    transition: all 200ms ease;     
 }
 
-li:hover{
-    background-color: rgb(243, 176, 89);
-    border-radius: 10px;    
+li:hover{    
+    transform: scale(1.1);
+    color: rgb(82, 76, 76);
+    text-shadow: 3px 3px 0px rgb(0 0 0 / 20%);
 }
 
 
@@ -93,10 +92,15 @@ li:hover{
 }
 
 #invite{
-    font-family: 'Do Hyeon';
+    font-family: 'Noto Serif KR', serif;
     width: 100%;
     text-align: center; 
     background-color: blanchedalmond;   
+}
+
+#invite h1{
+    padding-top: 50px;
+    font-size: 30px;
 }
 
 .invite_place{
