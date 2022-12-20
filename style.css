@@ -4,10 +4,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ti-cursor-color: rgb(255, 222, 112);
+}
+
 body {
   font-family: "Do Hyeon", sans-serif;
   font-family: "Noto Serif KR", serif;
   font-family: "Pacifico", cursive;
+}
+
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
 }
 
 #home {
@@ -116,6 +134,7 @@ li:hover {
 /* 감사의 인사 */
 #comment {
   background-color: rgb(255, 206, 134);
+  padding: 15vh;
 }
 #comment h3 {
   width: 50%;

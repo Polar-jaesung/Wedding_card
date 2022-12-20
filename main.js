@@ -18,3 +18,23 @@ const navbarToggleBtn = document.querySelector(".navbar_toggle_btn");
 navbarToggleBtn.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
+
+// Typeit 라이브러리
+
+document.addEventListener("DOMContentLoaded", () => {
+  new TypeIt("#title").pause(1000).delete(4, { delay: 1000 }).type("띠엔").go();
+});
+
+document.addEventListener("DOMContentLoaded", () => {});
+
+// 스크롤 아웃 라이브러리
+ScrollOut({
+  onShown: (element) => {
+    new TypeIt(element.querySelector("#comment_anime"), {
+      startDelay: 1000,
+      cursor: false,
+    })
+      .pause(2000)
+      .go();
+  },
+});

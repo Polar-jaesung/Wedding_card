@@ -17,17 +17,21 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <title>&#x2764; 변재성과 띠엔의 결혼식</title>
   </head>
   <body>
     <section id="home">
       <div class="content">
-        <p class="name">변재성 & 띠엔</p>
-        <p class="eng">WE ARE GETTING MARRIED</p>
-        <p class="date_place">
-          2023.03.18 토요일 오후 17:00<br />
-          안양 평촌 아르떼 웨딩홀 5층
-        </p>
+        <p id="title" class="name">변재성 & TIEN</p>
+        <div>
+          <p class="eng">WE ARE GETTING MARRIED</p>
+          <p class="date_place">
+            2023.03.18 토요일 오후 16:00<br />
+            안양 평촌 아르떼 웨딩홀 5층
+          </p>
+        </div>
       </div>
     </section>
     <section>
@@ -42,7 +46,7 @@
       </button>
     </section>
 
-    <section id="member">
+    <section id="member" data-scroll>
       <div class="member">
         <div class="man">
           <p>변재성</p>
@@ -54,8 +58,9 @@
         </div>
       </div>
     </section>
-    <section id="comment">
-      <h1>감사의 인사</h1>
+    <section id="comment" data-scroll>
+      <h1 id="comment_anime">감사의 인사</h1>
+      <img src="./img/flower.png" alt="" />
       <div>
         <h3>
           안녕하십니까 이 청첩장을 받아주시는 분들은 저에게 소중하신 분들입니다.
@@ -80,7 +85,7 @@
       </div>
     </section>
 
-    <section id="invite">
+    <section id="invite" data-scroll>
       <h1>초대합니다</h1>
       <span>| 결혼식까지 남은 시간 |</span>
       <p class="remain_time"></p>
@@ -100,11 +105,9 @@
         <img src="/img/food.jpg" alt="음식" />
       </div>
     </section>
-    <section id="gallery">
+    <section id="gallery" data-scroll>
       <h2>포토 갤러리</h2>
       <div>
-        <img src="./gallery/1.jpg" alt="" />
-        <img src="./gallery/2.jpg" alt="" />
         <img src="./gallery/3.jpg" alt="" />
         <img src="./gallery/4.jpg" alt="" />
         <img src="./gallery/5.jpg" alt="" />
