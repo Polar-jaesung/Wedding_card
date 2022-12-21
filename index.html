@@ -24,7 +24,7 @@
   <body>
     <section id="home">
       <div class="content">
-        <p id="title" class="name">변재성 & TIEN</p>
+        <p id="title" class="name">안녕하세요</p>
         <div>
           <p class="eng">WE ARE GETTING MARRIED</p>
           <p class="date_place">
@@ -111,20 +111,30 @@
         <img src="./gallery/3.jpg" alt="" />
         <img src="./gallery/4.jpg" alt="" />
         <img src="./gallery/5.jpg" alt="" />
-        <img src="./gallery/6.jpg" alt="" />
-        <img src="./gallery/7.jpg" alt="" />
+      </div>
+      <div>
+        <img src="./gallery/1.jpg" alt="" />
+        <img src="./gallery/2.jpg" alt="" />
         <img src="./gallery/8.jpg" alt="" />
       </div>
     </section>
     <section id="map">
       <h2>오시는 길</h2>
-      <a href="https://naver.me/FmgVC9Ud" target="_blank">
-        <img class="naver" src="/map/naver.png" alt="네이버지도" />
-      </a>
+      <div class="map_list">
+        <a href="https://naver.me/FmgVC9Ud" target="_blank">
+          <img class="naver" src="./map/naver-map.png" alt="네이버지도" />
+        </a>
+        <a href="https://place.map.kakao.com/26929876" target="_blank">
+          <img class="kakao" src="./map/kakao-map.png" alt="카카오지도" />
+        </a>
+      </div>
 
-      <a href="https://place.map.kakao.com/26929876" target="_blank">
-        <img class="kakao" src="/map/kakao.png" alt="카카오지도" />
-      </a>
+      <!-- 카카오 지도 -->
+      <div
+        id="daumRoughmapContainer1671635946941"
+        class="root_daum_roughmap root_daum_roughmap_landing"
+        style="width: 60%"
+      ></div>
     </section>
 
     <script src="main.js"></script>
@@ -134,5 +144,23 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: "1671635946941",
+        key: "2d54p",
+        mapHeight: "360",
+      }).render();
+    </script>
   </body>
 </html>

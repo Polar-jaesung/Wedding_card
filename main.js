@@ -22,7 +22,15 @@ navbarToggleBtn.addEventListener("click", () => {
 // Typeit 라이브러리
 
 document.addEventListener("DOMContentLoaded", () => {
-  new TypeIt("#title").pause(1000).delete(4, { delay: 1000 }).type("띠엔").go();
+  new TypeIt("#title")
+    .pause(500) //멈춤
+    .delete(5, { delay: 500 })
+    // .pause(500) //멈춤
+    .type("저 결혼합니다 :)") //타이핑
+    .pause(500) //멈춤
+    .delete(10, { delay: 800 })
+    .type("변재성 & 띠엔") //타이핑
+    .go();
 });
 
 document.addEventListener("DOMContentLoaded", () => {});

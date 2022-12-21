@@ -6,6 +6,7 @@
 
 :root {
   --ti-cursor-color: rgb(255, 222, 112);
+  --ti-cursor-margin-left: 0.1em;
 }
 
 body {
@@ -28,8 +29,18 @@ body {
   opacity: 0;
 }
 
+#comment,
+#invite,
+#gallery,
+#map {
+  font-family: "Noto Serif KR", serif;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
 #home {
-  background-image: url("/img/main.jpg");
+  background-image: url("./img/main.jpg");
   background-size: cover;
   background-position: cover;
   background-repeat: no-repeat;
@@ -145,12 +156,6 @@ li:hover {
 }
 
 /* 초대합니다 */
-#comment,
-#invite {
-  font-family: "Noto Serif KR", serif;
-  width: 100%;
-  text-align: center;
-}
 
 #invite {
   background-color: blanchedalmond;
@@ -183,6 +188,9 @@ li:hover {
 }
 
 /* 갤러리 */
+#gallery {
+  text-align: center;
+}
 #gallery h2 {
   text-align: center;
   margin: 20px 0;
@@ -191,7 +199,6 @@ li:hover {
 #gallery div img {
   width: 22%;
   padding: 10px 5px;
-  /* box-shadow: 0px 0px 20px rgb(0 0 0 / 50%); */
   filter: grayscale(70%);
   transition: all 200ms ease-in-out;
 }
@@ -204,13 +211,23 @@ li:hover {
 
 /*  오시는 길 */
 
-.naver {
-  width: 100px;
-  height: auto;
+#map {
+  background-color: blanchedalmond;
 }
+
+#map h2 {
+  margin-bottom: 3vh;
+}
+.naver,
 .kakao {
-  width: 150px;
+  width: 5%;
   height: auto;
+  margin-right: 1rem;
+  margin-bottom: 3vh;
+}
+
+#daumRoughmapContainer1671635946941 {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
