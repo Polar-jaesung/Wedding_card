@@ -96,10 +96,15 @@ body {
 }
 
 /* 네브바 */
+#sticky_nav {
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+}
+
 .menu {
   display: flex;
   background-color: rgb(223, 223, 223);
-  position: sticky;
   width: 100%;
   height: 60px;
   margin: 0 auto;
@@ -232,9 +237,39 @@ li:hover {
 
 @media screen and (max-width: 768px) {
   .navbar_toggle_btn {
+    position: sticky;
     display: block;
+    top: 0;
   }
+
+  .navbar_toggle_btn img {
+    border: 2px solid rgb(253, 187, 5);
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+
   .menu {
     flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  #sticky_nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(223, 223, 223);
+  }
+
+  .man img,
+  .lady img {
+    width: 50vw;
+    padding-right: 5px;
   }
 }
