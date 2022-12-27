@@ -298,14 +298,38 @@ li:hover {
     margin: 0 auto;
   }
 
+  #member h1 {
+    font-size: 45px;
+  }
+
+  .man p,
+  .lady p {
+    font-size: 30px;
+    text-align: center;
+  }
+
   .man img,
   .lady img {
     width: 80%;
     margin-left: 30px;
   }
+  /* 감사의 인사 */
+  #comment {
+    padding: 30px 30px;
+    margin: 0;
+  }
 
+  #comment h1 {
+    font-size: 25px;
+    display: inline;
+  }
+
+  #comment h3 {
+    width: 70%;
+  }
   #comment img {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
+    display: block;
   }
 }
