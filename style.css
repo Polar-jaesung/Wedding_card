@@ -393,6 +393,7 @@ li:hover {
   /* 모바일 오시는길 */
   #map h2 {
     font-size: 30px;
+    padding-top: 30px;
   }
 
   .map_list {
