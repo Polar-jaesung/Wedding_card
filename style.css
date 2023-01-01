@@ -167,7 +167,7 @@ li:hover {
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: left;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 /* 초대합니다 */
@@ -236,10 +236,15 @@ li:hover {
 }
 .naver,
 .kakao {
-  width: 5%;
+  width: 40%;
   height: auto;
   margin-right: 1rem;
   margin-bottom: 3vh;
+}
+
+.map_list {
+  display: flex;
+  justify-content: center;
 }
 
 #daumRoughmapContainer1671635946941 {
@@ -280,9 +285,18 @@ li:hover {
     text-align: center;
   }
 
-  /* 타이틀 */
+  /* 모바일 '맨위로' */
+  #home {
+    background-image: url("./img/main.jpg");
+    background-size: cover;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  /* 모바일 타이틀 */
   .name {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .eng,
@@ -292,7 +306,7 @@ li:hover {
     text-align: center;
   }
 
-  /* 신랑 신부  */
+  /* 모바일 신랑 신부  */
   .member {
     display: block;
     margin: 0 auto;
@@ -313,23 +327,85 @@ li:hover {
     width: 80%;
     margin-left: 30px;
   }
-  /* 감사의 인사 */
+  /* 모바일 감사의 인사 */
   #comment {
     padding: 30px 30px;
     margin: 0;
   }
 
   #comment h1 {
-    font-size: 25px;
+    font-size: 30px;
     display: inline;
   }
 
   #comment h3 {
     width: 70%;
+    font-size: 14px;
   }
   #comment img {
     width: 50%;
     margin: 0 auto;
     display: block;
+  }
+  /* 모바일 초대합니다 */
+  #invite h1 {
+    font-size: 30px;
+  }
+  #invite span {
+    font-size: 20px;
+  }
+
+  #invite p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  #invite .remain_inform {
+    padding-bottom: 60px;
+  }
+
+  .invite_place,
+  .invite_food {
+    flex-direction: column;
+    display: block;
+  }
+
+  .place_detail,
+  .food_detail {
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  #invite img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* 모바일 갤러리 */
+  #gallery h2 {
+    font-size: 30px;
+  }
+  #gallery div img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* 모바일 오시는길 */
+  #map h2 {
+    font-size: 30px;
+  }
+
+  .map_list {
+    display: flex;
+  }
+  .naver,
+  .kakao {
+    width: 40%;
+  }
+  .kakao {
+    margin-left: 30px;
+  }
+  .naver {
+    margin-right: 30px;
   }
 }
